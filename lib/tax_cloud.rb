@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'savon'
 require 'savon_xml_override'
 require 'tax_cloud/version'

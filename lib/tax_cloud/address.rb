@@ -4,11 +4,10 @@ module TaxCloud
     attr_accessor :address1, :address2, :city, :state, :zip5, :zip4
 
     # Initialize the object with the given variables
-    def initialize(attrs = {})
+    def initialize(attrs = {})      
       attrs.each do |sym, val|
         self.send "#{sym}=", val
       end
-      super
     end
 
     # Verify the address via TaxCloud
